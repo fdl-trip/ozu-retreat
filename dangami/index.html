@@ -48,7 +48,8 @@ a{color:inherit}
 .hero .role{margin-top:28px;font-family:var(--mincho);font-size:19px;letter-spacing:.2em;color:var(--wax-light)}
 .hero .lead{margin-top:26px;color:#d9d2c4;font-size:15px;max-width:30em}
 .hero figure{position:relative}
-.hero figure img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 20%;border:1px solid rgba(217,185,104,.35)}
+.hero figure img{width:100%;max-width:380px;margin-left:auto;border:1px solid rgba(217,185,104,.35)}
+.hero figure{max-width:380px;margin-left:auto}
 .hero figure::after{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid rgba(217,185,104,.4);z-index:-1}
 .hero figure{z-index:1}
 .hero figcaption{font-size:11px;color:#9b9384;margin-top:10px;letter-spacing:.08em}
@@ -126,6 +127,12 @@ dl.facts dt{color:var(--wax);font-weight:500;letter-spacing:.1em;font-size:13px;
 .works-photos{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:56px}
 .works-photos figcaption{font-size:13px;color:var(--ink-soft);margin-top:10px}
 @media (max-width:820px){.works-photos{grid-template-columns:1fr;gap:28px;margin-top:40px}}
+.venue{margin-top:56px}
+.venue img{width:100%}
+.venue figcaption{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;margin-top:16px;padding-top:16px;border-top:1px solid var(--line)}
+.venue-label{font-size:12px;font-weight:700;letter-spacing:.2em;color:var(--wax)}
+.venue-name{font-family:var(--mincho);font-size:22px;letter-spacing:.15em}
+.venue a{font-size:13px;color:var(--ink-soft)}
 .event-meta{margin-top:26px;font-size:14px}
 .event-meta dl{display:grid;grid-template-columns:5em 1fr;gap:6px 14px}
 .event-meta dt{color:var(--wax);font-size:12px;font-weight:700;padding-top:3px}
@@ -149,7 +156,7 @@ footer .fine{margin-top:18px;font-size:12px;line-height:1.9}
 
 @media (max-width:820px){
   .hero-inner{grid-template-columns:1fr;gap:40px;padding:64px 16px 64px}
-  .hero figure{max-width:300px}
+  .hero figure{max-width:280px;margin:0 auto}
   .wrap,.narrow{padding:0 16px}
   section{padding:72px 0}
   .faces,.art-grid,.house-grid,.event-grid{grid-template-columns:1fr;gap:32px}
@@ -173,7 +180,7 @@ footer .fine{margin-top:18px;font-size:12px;line-height:1.9}
       <p class="lead">新谷藩・加藤家の末裔。古代の蜜蝋画と日本の伝統画材を融合した独自の表現を追求しながら、先祖ゆかりの武家屋敷を再生し、アートを通じて大洲の風土を未来の子どもたちへ手渡そうとしている。</p>
     </div>
     <figure>
-      <img src="../portrait.jpg" alt="團上祐志氏の肖像" width="370" height="442">
+      <img src="../work3.jpg" alt="團上祐志氏の蜜蝋画作品。上部が金色、下部が白や青紫の層をなす縦長の大作" width="1000" height="1660">
     </figure>
   </div>
 </header>
@@ -315,6 +322,14 @@ footer .fine{margin-top:18px;font-size:12px;line-height:1.9}
         <figcaption>座敷に置かれた作品と展示空間</figcaption>
       </figure>
     </div>
+    <figure class="venue">
+      <img src="../garyusanso.jpg" alt="肱川を見下ろす崖の上に建つ臥龍山荘の茅葺きの建物と、手前の紅葉の木々" loading="lazy" width="1600" height="1067">
+      <figcaption>
+        <span class="venue-label">展示場所</span>
+        <span class="venue-name">臥龍山荘</span>
+        <a href="https://www.garyusanso.jp/" target="_blank" rel="noopener">www.garyusanso.jp</a>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
